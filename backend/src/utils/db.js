@@ -3,7 +3,7 @@ const pool = require('../db');
 async function query(sql, params = []) {
   try {
     const [rows] = await pool.execute(sql, params);
-    return rows;
+    return { rows, rowCount: rows.length };
   } catch (err) {
     throw new Error(`Database query failed: ${err.message}`);
   }

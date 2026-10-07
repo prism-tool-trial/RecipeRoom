@@ -13,10 +13,9 @@ router.get('/search', async (req, res) => {
       `SELECT ingredient_id, name, generic_taxonomy_name,
               calories_per_unit, protein_g, carbs_g, fat_g
        FROM Ingredient
-       WHERE name LIKE ?
+       WHERE name LIKE '%${q.trim()}%'
        ORDER BY name ASC
-       LIMIT 20`,
-      [`%${q.trim()}%`]
+       LIMIT 20`
     );
 
     res.json(results);
