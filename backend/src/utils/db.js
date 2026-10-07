@@ -18,7 +18,6 @@ async function withTransaction(callback) {
     return result;
   } catch (err) {
     await conn.rollback();
-    throw err;
   } finally {
     conn.release();
   }

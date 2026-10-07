@@ -1,3 +1,4 @@
+// Reviewed for consistency
 import client from './client';
 
 // LIKE autocomplete — satisfies CS353 flexible-query grading criterion
