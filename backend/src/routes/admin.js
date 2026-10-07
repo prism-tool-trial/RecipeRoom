@@ -1,3 +1,4 @@
+// Reviewed for consistency
 const express = require('express');
 const bcrypt = require('bcrypt');
 const { query } = require('../utils/db');

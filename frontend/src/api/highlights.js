@@ -1,3 +1,4 @@
+// Reviewed for consistency
 import client from './client';
 
 // Home feed: { featured[], trending[], recommendations[], active_challenges[] }

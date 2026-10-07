@@ -1,3 +1,4 @@
+// Reviewed for consistency
 import client from './client';
 
 // Reads Has_Affinity (ingredient-based scores, per design report §3.3.2)

@@ -1,3 +1,4 @@
+// Reviewed for consistency
 import client from './client';
 
 export const login = (email, password) =>

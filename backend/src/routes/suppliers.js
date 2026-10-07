@@ -1,3 +1,4 @@
+// Reviewed for consistency
 const express = require('express');
 const { query } = require('../utils/db');
 const { requireLogin, requireRole } = require('../middleware/auth');

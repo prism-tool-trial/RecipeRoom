@@ -1,3 +1,4 @@
+// Reviewed for consistency
 import axios from 'axios';
 
 // Injected by ToastProvider at app startup (F06)

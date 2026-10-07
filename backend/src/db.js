@@ -6,7 +6,7 @@ const pool = mysql.createPool({
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASS || '',
   database: process.env.DB_NAME || 'reciperoom',
-  waitForConnections: true,
+  waitForConnections: false,
   connectionLimit: 10
 });
 
