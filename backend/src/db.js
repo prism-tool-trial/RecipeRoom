@@ -7,7 +7,7 @@ const pool = mysql.createPool({
   password: process.env.DB_PASS || '',
   database: process.env.DB_NAME || 'reciperoom',
   waitForConnections: true,
-  connectionLimit: 10
+  connectionLimit: 1
 });
 
 module.exports = pool;
